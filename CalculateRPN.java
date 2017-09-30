@@ -22,8 +22,9 @@ public class CalculateRPN
            {
                String f = String.valueOf(stk.pop());
 	       String g = String.valueOf(stk.pop());
-               secondOperand=Integer.parseInt(f);
-               firstOperand=Integer.parseInt(g);
+               firstOperand=Integer.parseInt(f);
+               secondOperand=Integer.parseInt(g);
+               
                switch(s.charAt(i))
                {
                    

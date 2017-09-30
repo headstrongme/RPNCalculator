@@ -1,4 +1,3 @@
-
 package rpn;
 
 import java.util.ArrayList;
@@ -7,12 +6,10 @@ import java.util.Scanner;
 
 public class RPN 
 {
-    
-    
-    public static void main(String[] args) {
-        Scanner sobj = new Scanner(System.in);
-        String s=sobj.next();
-       stack st = new stack();
+    public static String convert(String a)
+    {
+        String s=a;
+      stack st = new stack();
        int j=0;
         String postfix= "";
         for(int i=0;i<((s.length()));i++)
@@ -94,8 +91,9 @@ public class RPN
           }
               
         }
-        System.out.println(postfix);
-        int result = CalculateRPN.process(postfix);
-        System.out.println(result);
+        System.out.println(postfix);  
+        return(postfix);
     }
+    
+   
 }
